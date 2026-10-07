@@ -53,5 +53,17 @@ console.log(age);
 const number = 1;
 console.log(number);  //by setting const it avoids 'number' from being reassigned, it is a constant value. If we try to reassign it, it will throw an error.
 
-number = 2;
-console.log(number);
+//number = 2;
+//console.log(number);
+
+let customerList = ["Ichigo", "Rukia", "Renji", "Byakuya"];
+console.log(customerList);
+
+customerList = "Aizen";
+console.log(customerList);
+
+const customerList2 = ["Ichigo", "Rukia", "Renji", "Byakuya"];
+console.log(customerList2);
+
+customerList2.push("Aizen");
+console.log(customerList2);
