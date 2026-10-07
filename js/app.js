@@ -67,3 +67,19 @@ console.log(customerList2);
 
 customerList2.push("Aizen");
 console.log(customerList2);
+
+customerList2.pop("Ichigo");
+console.log(customerList2);
+
+const numberList = [];
+numberList.push(1);
+numberList.push(2);
+numberList.push("Wassup");
+console.log(numberList);
+
+numberList.reverse();
+console.log(numberList);
+
+
+numberList.reverse();
+console.log(numberList);
