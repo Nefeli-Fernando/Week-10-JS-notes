@@ -44,6 +44,7 @@ function loadTableOnAction(){
 console.log(name);  //the reason w
 console.log(age);
 */
+/*
 let age = 30;
 console.log(age);
 
@@ -55,7 +56,7 @@ console.log(number);  //by setting const it avoids 'number' from being reassigne
 
 //number = 2;
 //console.log(number);
-
+*/
 let customerList = ["Ichigo", "Rukia", "Renji", "Byakuya"];
 console.log(customerList);
 
@@ -98,6 +99,7 @@ console.log(productList);
 
 //3rd stwp is a bit more complex its made using arrow functions
 let inStockProducts = productList.filter(product => product.inStock == true);
+
    // function(product){
     //    return ;  //we pass the objects line by line using the filter method, and we check if the inStock property is true. If it is, we return the product object to the new array inStockProducts.
     
@@ -108,3 +110,39 @@ let inStockProducts = productList.filter(product => product.inStock == true);
 //}
 
 console.log(inStockProducts);
+console.log("BREAK");
+
+//STEP 1
+function addNumber(num1,num2){
+    return num1 + num2;
+}
+console.log(addNumber(10,5));
+
+//STEP 2
+let getSum = function(num1, num2){
+    return num1 + num2;
+}
+console.log(getSum(10,12));
+
+//STEP 3
+let getTotal = (num1, num2) => {
+    return num1 + num2;
+}
+console.log(getTotal(2,10));
+
+//STEP 4 - anonymi=ous arrow function
+(num1, num2) => {
+    return num1 + num2;
+}
+
+//Arrow function with single parameter
+let txtValue = txtValue => {
+    return txtValue;
+}
+console.log(txtValue("Hello World"));
+
+//Arrow function with single parameter and single line of code
+let sample = txtValue1 => txtValue1;
+console.log(sample("Hello World 2"));
+
+
