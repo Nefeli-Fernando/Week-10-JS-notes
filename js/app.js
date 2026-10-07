@@ -93,12 +93,16 @@ const productList = [
 
 console.log(productList);
 
-let inStockProducts = productList.filter(
-    function(product){
-        return product.inStock == true;  //we pass the objects line by line using the filter method, and we check if the inStock property is true. If it is, we return the product object to the new array inStockProducts.
-    }
-);
 
+
+
+//3rd stwp is a bit more complex its made using arrow functions
+let inStockProducts = productList.filter(product => product.inStock == true);
+   // function(product){
+    //    return ;  //we pass the objects line by line using the filter method, and we check if the inStock property is true. If it is, we return the product object to the new array inStockProducts.
+    
+
+    
 //function productFilter(product){
  //   return product.inStock == true;
 //}
