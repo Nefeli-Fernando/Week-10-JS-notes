@@ -83,3 +83,24 @@ console.log(numberList);
 
 numberList.reverse();
 console.log(numberList);
+
+const productList = [
+    {name:"bun", inStock:true, price : 100},
+    {name:"milk", inStock:true, price : 200},
+    {name:"bread", inStock:false, price : 300},
+    {name:"eggs", inStock:true, price : 450},
+];
+
+console.log(productList);
+
+let inStockProducts = productList.filter(
+    function(product){
+        return product.inStock == true;  //we pass the objects line by line using the filter method, and we check if the inStock property is true. If it is, we return the product object to the new array inStockProducts.
+    }
+);
+
+//function productFilter(product){
+ //   return product.inStock == true;
+//}
+
+console.log(inStockProducts);
